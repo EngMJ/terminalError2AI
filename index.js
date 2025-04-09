@@ -1,5 +1,5 @@
 const readline = require('readline');
-const CopilotService = require('./copilotService'); // 假设已实现 Copilot API 调用逻辑
+const ChatGPTService = require('./chatgptService');
 const { language } = require('./config');
 
 // 创建读取终端输入的接口
@@ -16,16 +16,17 @@ rl.on('line', async (line) => {
 
     if (errorMessage) {
         console.log('\n捕获到错误信息：', errorMessage);
-        console.log('正在发送到 Copilot 获取解决方案...\n');
+        console.log('正在发送到 ChatGPT 获取解决方案...\n');
 
         try {
-            const solution = await CopilotService.sendErrorToCopilot(errorMessage);
+            // 发送到 ChatGPT
+            const chatGPTSolution = await ChatGPTService.sendErrorToChatGPT(errorMessage);
             console.log(
-                `\n=== Copilot 回复 (${language === 'zh' ? '中文' : '英文'}) ===\n`,
-                solution
+                `\n=== ChatGPT 回复 (${language === 'zh' ? '中文' : '英文'}) ===\n`,
+                chatGPTSolution
             );
         } catch (err) {
-            console.error('请求 Copilot 失败：', err.message);
+            console.error('请求 ChatGPT 失败：', err.message);
         }
     }
 });
