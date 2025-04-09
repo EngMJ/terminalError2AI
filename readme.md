@@ -46,9 +46,9 @@ This Node.js application, **TerminalError2AI**, is designed to work alongside ot
  ERROR  Failed to compile with 1 error
 
 Captured error message: SyntaxError: Unexpected token
-Sending to Copilot for solution...
+Sending to chatgpt for solution...
 
-=== Copilot Response (Chinese) ===
+=== chatgpt Response (Chinese) ===
 解决方案：
 请检查代码中是否有语法错误，例如遗漏括号或引号。
 ```
@@ -99,9 +99,9 @@ Sending to Copilot for solution...
  ERROR  Failed to compile with 1 error
 
 捕获到错误信息： SyntaxError: Unexpected token
-正在发送到 Copilot 获取解决方案...
+正在发送到 chatgpt 获取解决方案...
 
-=== Copilot 回复 (中文) ===
+=== chatgpt 回复 (中文) ===
 解决方案：
 请检查代码中是否有语法错误，例如遗漏括号或引号。
 ```
