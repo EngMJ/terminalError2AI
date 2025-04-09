@@ -105,3 +105,20 @@ Sending to Copilot for solution...
 解决方案：
 请检查代码中是否有语法错误，例如遗漏括号或引号。
 ```
+---
+
+## License / 许可证
+
+---
+
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute this software, provided that the original copyright notice and permission notice are included in all copies or substantial portions of the software.
+
+For the full license text, please refer to the [LICENSE](./LICENSE) file.
+
+---
+
+本项目使用 **MIT 开源许可证**。您可以自由地使用、修改和分发本软件，但需在软件的所有副本或重要部分中包含原始的版权声明和许可声明。
+
+完整的许可文本，请参阅 [LICENSE](./LICENSE) 文件。
+
+---
